@@ -1,8 +1,8 @@
 resource "aws_subnet" "demo1" {
-  vpc_id            = aws_vpc.demo.id
-  cidr_block        = "10.15.1.0/24"
-  availability_zone = "ap-south-1a"
-
+  vpc_id                  = aws_vpc.demo.id
+  cidr_block              = "10.15.1.0/24"
+  availability_zone       = "ap-south-1a"
+  map_public_ip_on_launch = "true"
   tags = {
     Name = "Subnet_1"
   }
