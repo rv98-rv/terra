@@ -1,10 +1,10 @@
 #Creating VPC
 resource "aws_vpc" "demo" {
-  cidr_block       = "10.15.0.0/17"
+  cidr_block       = "10.15.0.0/16"
   instance_tenancy = "default"
 
   tags = {
-    Name = "RV_VPC_Terraform"
+    Name = "RV_VPC_TF"
   }
 }
 
